@@ -1,0 +1,1 @@
+export const API_URL = 'https://us-central1-rotten-top-api.cloudfunctions.net/app';

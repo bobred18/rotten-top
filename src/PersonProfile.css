@@ -1,0 +1,79 @@
+.person-profile {
+    min-height: 740px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.person-profile-box {
+    padding: 16px 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 1000;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    line-height: 1;
+    animation: drop 0.4s forwards;
+}
+
+@media (max-width: 478px) {
+    .person-profile-box {
+        width: 90vw;
+    }
+}
+
+.person-icon-holder {
+    display: flex;
+    justify-content: center;
+}
+.person-icon {
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    border-radius: 35%;
+    padding: 5px;
+}
+
+@keyframes drop {
+    from {
+        opacity: 0;
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@keyframes appear-stable {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.loading {
+    color: #bbb;
+    animation: drop 1s forwards;
+}
+
+.come-back-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 13px;
+    font-size: 26px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    animation: appear-stable 0.4s forwards;
+}

@@ -1,0 +1,148 @@
+.movie .hero {
+    color: #141414;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: drop 0.4s forwards;
+}
+
+.movie .grid {
+    padding: 0 3rem;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.movie .grid .right {
+    order: 1;
+    text-align: center;
+    line-height: 1;
+    color: rgba(240, 255, 255, 0.9);
+    border: 16px solid #130f40;
+    border-bottom: 0px;
+    background-color: #130f40;
+}
+
+.movie .image-title {
+    padding: 3px 0;
+}
+
+.movie .grid .left {
+    order: 0;
+    background-color: #7fcec5;
+    background-image: linear-gradient(315deg, #7fcec5 0%, cadetblue 74%);
+    padding: 10px 20px 20px 20px;
+    font-size: 1.25rem;
+}
+
+.movie .title {
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 1000;
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+
+
+.movie .image {
+    width: 100%;
+}
+
+.movie .image-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 25px);
+    min-height: 250px;
+}
+
+.movie .rating {
+    display: flex;
+}
+
+.stars .fa-star {
+    margin: 0 2px;
+}
+
+.stars .checked {
+    color: rgb(255, 238, 0)
+}
+
+.movie .play-button {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 250px;
+    font-weight: 1000;
+    font-size: 25px;
+    padding: 22px;
+    margin-top: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.15s;
+    text-decoration: none;
+    color: #141414;
+}
+
+.movie .play-button:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+@media only screen and (max-width: 750px) {
+    .movie .grid {
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .movie .grid .left {
+        order: 2;
+    }
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    animation: drop 0.4s forwards;
+    padding-top: 20px;
+    padding-bottom: 50px !important;
+    /* background-color: pink; */
+}
+
+@keyframes drop {
+    from {
+        opacity: 0;
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .movie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    .movie .hero {
+        max-width: 1400px;
+    }
+}
+
+.person-box {
+    height: 24px;
+    /* display: flex; */
+    background-color: rgba(0, 0, 255, 0.219);
+    /* inline-size: min-content; */
+    overflow-wrap: break-word;
+    /* word-break: break-all; */
+}

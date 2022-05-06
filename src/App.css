@@ -1,0 +1,44 @@
+.app {
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.under-bar {
+  height: calc(100vh - 50px);
+}
+
+.person-link {
+  text-decoration: none;
+  color: rgb(0, 39, 51);
+  font-weight: 700;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 3px !important;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: #75757511;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(129, 129, 129, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(129, 129, 129, 0.35);
+}

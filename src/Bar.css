@@ -1,0 +1,23 @@
+.bar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    font-family: 'Anton';
+    font-weight: 100;
+    font-size: 30px;
+    height: 50px;
+    background-color: #080629;
+    padding: 0 10px;
+}
+
+.bar .subtitle {
+    padding-left: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bar .brand {
+    color: azure;
+    text-decoration: none;
+    cursor: pointer;
+}
