@@ -20,12 +20,9 @@ function App() {
         <div className='under-bar'>
           <Home />
           <Routes>
-            {/* exact */}
             <Route path='/' element={<Movies />} />
-            {/* exact */}
             <Route path='people' element={<People />} />
             <Route path={'people/:id'} element={<PersonProfile />} />
-            {/* exact */}
             <Route path='movies' element={<Movies />} />
             <Route path={`movies/:id`} element={<Movie />} />
           </Routes>

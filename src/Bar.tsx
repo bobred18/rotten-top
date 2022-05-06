@@ -9,8 +9,6 @@ import { useSelector } from 'react-redux';
 
 function Bar() {
 
-    const linkStyle = { textDecoration: 'none' };
-
     const subtitle = useSelector((state: any) => state.subtitle);
 
     return (

@@ -108,7 +108,6 @@
     animation: drop 0.4s forwards;
     padding-top: 20px;
     padding-bottom: 50px !important;
-    /* background-color: pink; */
 }
 
 @keyframes drop {
@@ -130,7 +129,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background-color: red; */
     }
 
     .movie .hero {
@@ -140,9 +138,6 @@
 
 .person-box {
     height: 24px;
-    /* display: flex; */
     background-color: rgba(0, 0, 255, 0.219);
-    /* inline-size: min-content; */
     overflow-wrap: break-word;
-    /* word-break: break-all; */
 }

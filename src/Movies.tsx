@@ -42,11 +42,6 @@ function Movies() {
     </div>);
 }
 
-interface MovieCardInterface {
-    title?: string,
-    image?: string,
-}
-
 function MovieCard(props: any) {
     const dispatch = useDispatch();
     const navigate = useNavigate();
